@@ -5,7 +5,7 @@ get android meta data
 ## Installation
 
 ```sh
-npm install react-native-android-meta-data
+npm install git@github.com:amazingCoding/react-native-android-meta-data.git
 ```
 
 ## Usage
