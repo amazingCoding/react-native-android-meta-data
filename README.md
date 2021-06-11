@@ -1,6 +1,6 @@
 # react-native-android-meta-data
 
-get androidmeta data
+get android meta data
 
 ## Installation
 
@@ -9,14 +9,23 @@ npm install react-native-android-meta-data
 ```
 
 ## Usage
-
+```xml
+// add this to your android AndroidManifest file
+<meta-data
+    android:name="appStoreName"
+    android:value="googlePlay" />
+```
 ```js
 import AndroidMetaData from "react-native-android-meta-data";
 
-// ...
-
-const result = await AndroidMetaData.multiply(3, 7);
+// Javascript
+const res = await AndroidMetaData.getKey('appStoreName')
+// in android
+console.log(res) // googlePlay
+// in ios 
+console.log(res) // IOS is not supported
 ```
+
 
 ## Contributing
 
